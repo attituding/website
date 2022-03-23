@@ -1,1 +1,8 @@
-{}
+{
+    "name": "website",
+    "license": "MIT",
+    "author": "Attituding <Attituding@outlook.com>",
+    "devDependencies": {
+        "tailwindcss": "^3.0.23"
+    }
+}
