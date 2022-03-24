@@ -500,16 +500,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
-.h-\[20rem\] {
-  height: 20rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-\[55rem\] {
-  height: 55rem;
+.h-max {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .h-fit {
@@ -518,16 +512,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: fit-content;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-16 {
   height: 4rem;
 }
 
 .h-\[3rem\] {
   height: 3rem;
-}
-
-.h-\[50rem\] {
-  height: 50rem;
 }
 
 .w-screen {
@@ -546,12 +540,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 12rem;
 }
 
-.w-20 {
-  width: 5rem;
+.w-full {
+  width: 100%;
 }
 
-.w-\[41rem\] {
-  width: 41rem;
+.w-\[25rem\] {
+  width: 25rem;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .w-16 {
@@ -582,12 +580,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -616,6 +622,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
 }
 
 .overflow-y-auto {
@@ -863,7 +873,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1700px) {
+  .desktop\:h-screen {
+    height: 100vh;
+  }
+
+  .desktop\:h-\[50rem\] {
+    height: 50rem;
+  }
+
+  .desktop\:w-\[45rem\] {
+    width: 45rem;
+  }
+
   .desktop\:flex-row {
     flex-direction: row;
+  }
+
+  .desktop\:items-start {
+    align-items: flex-start;
+  }
+
+  .desktop\:justify-start {
+    justify-content: flex-start;
   }
 }
