@@ -624,10 +624,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
 }
 
-.overflow-clip {
-  overflow: clip;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -881,6 +877,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 50rem;
   }
 
+  .desktop\:h-\[55rem\] {
+    height: 55rem;
+  }
+
+  .desktop\:h-\[52\.5rem\] {
+    height: 52.5rem;
+  }
+
   .desktop\:w-\[45rem\] {
     width: 45rem;
   }
@@ -895,5 +899,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .desktop\:justify-start {
     justify-content: flex-start;
+  }
+
+  .desktop\:overflow-y-hidden {
+    overflow-y: hidden;
   }
 }
