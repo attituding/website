@@ -608,6 +608,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-evenly;
 }
 
+.justify-items-stretch {
+  justify-items: stretch;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -706,6 +710,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-3xl {
@@ -868,17 +877,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1350px) {
   .desktop\:h-screen {
     height: 100vh;
   }
 
-  .desktop\:h-\[52\.5rem\] {
-    height: 52.5rem;
+  .desktop\:h-\[35rem\] {
+    height: 35rem;
   }
 
-  .desktop\:w-\[45rem\] {
-    width: 45rem;
+  .desktop\:w-\[35rem\] {
+    width: 35rem;
   }
 
   .desktop\:flex-row {
