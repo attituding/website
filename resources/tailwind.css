@@ -560,10 +560,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -578,10 +574,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-start {
   align-items: flex-start;
-}
-
-.items-end {
-  align-items: flex-end;
 }
 
 .items-center {
@@ -636,10 +628,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-y: auto;
 }
 
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .break-words {
   overflow-wrap: break-word;
 }
@@ -652,12 +640,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-4 {
@@ -929,8 +917,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-rows: repeat(1, minmax(0, 1fr));
   }
 
-  .main-desktop\:overflow-y-hidden {
-    overflow-y: hidden;
+  .main-desktop\:items-center {
+    align-items: center;
+  }
+
+  .main-desktop\:rounded-xl {
+    border-radius: 0.75rem;
+  }
+
+  .main-desktop\:border-4 {
+    border-width: 4px;
   }
 }
 
@@ -954,10 +950,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .projects-desktop\:flex-row {
     flex-direction: row;
-  }
-
-  .projects-desktop\:items-start {
-    align-items: flex-start;
   }
 
   .projects-desktop\:justify-start {
