@@ -4,5 +4,8 @@
     "author": "Attituding <Attituding@outlook.com>",
     "devDependencies": {
         "tailwindcss": "^3.0.23"
+    },
+    "scripts": {
+        "watch": "npx tailwindcss -i ./resources/source.css -o ./resources/tailwind.css --watch"
     }
 }
