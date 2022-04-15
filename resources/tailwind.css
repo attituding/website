@@ -640,6 +640,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -686,10 +690,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-neutral-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 212 / var(--tw-bg-opacity));
-}
-
-.fill-black {
-  fill: #000;
 }
 
 .p-8 {
@@ -891,10 +891,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(64 64 64 / var(--tw-bg-opacity));
   }
 
-  .dark\:fill-white {
-    fill: #fff;
-  }
-
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -927,6 +923,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1080px) {
+  .projects-desktop\:sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .projects-desktop\:top-0 {
+    top: 0px;
+  }
+
   .projects-desktop\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
