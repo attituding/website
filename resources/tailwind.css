@@ -655,14 +655,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(228 228 231 / var(--tw-bg-opacity));
 }
 
-.bg-neutral-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
-}
-
 .bg-neutral-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .p-8 {
@@ -915,6 +915,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .main-desktop\:border-4 {
     border-width: 4px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .main-desktop\:dark\:bg-neutral-800 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+    }
   }
 }
 
