@@ -548,6 +548,62 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-\[200px_minmax\(900px\2c _1fr\)_100px\] {
+  grid-template-columns: 200px minmax(900px, 1fr) 100px;
+}
+
+.grid-cols-\[repeat\(900px\2c _1fr\)_100px\] {
+  grid-template-columns: repeat(900px, 1fr) 100px;
+}
+
+.grid-cols-\[repeat\(900px\2c _1fr\)\] {
+  grid-template-columns: repeat(900px, 1fr);
+}
+
+.grid-cols-\[repeat\(auto\2c _1fr\)\] {
+  grid-template-columns: repeat(auto, 1fr);
+}
+
+.grid-cols-\[repeat\(auto-fit\2c _1fr\)\] {
+  grid-template-columns: repeat(auto-fit, 1fr);
+}
+
+.grid-cols-\[repeat\(auto-fit\2c _minmax\(\)\)\] {
+  grid-template-columns: repeat(auto-fit, minmax());
+}
+
+.grid-cols-\[repeat\(auto-fit\2c _minmax\(15rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(15rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(20rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(20rem\2c 30rem\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(20rem,30rem));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(20rem\2c 50rem\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(20rem,50rem));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(20rem\2c 20rem\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(20rem,20rem));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(17\.5rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(17.5rem,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(18rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -562,14 +618,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .place-content-center {
   place-content: center;
-}
-
-.place-content-stretch {
-  place-content: stretch;
-}
-
-.place-items-stretch {
-  place-items: stretch;
 }
 
 .items-start {
@@ -616,16 +664,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-12 {
-  gap: 3rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -640,14 +684,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.text-ellipsis {
-  text-overflow: ellipsis;
-}
-
-.break-words {
-  overflow-wrap: break-word;
 }
 
 .rounded-3xl {
@@ -708,16 +744,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
-.p-16 {
-  padding: 4rem;
-}
-
-.p-12 {
-  padding: 3rem;
-}
-
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-8 {
@@ -983,5 +1019,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .projects-desktop\:justify-start {
     justify-content: flex-start;
+  }
+
+  .projects-desktop\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .projects-desktop\:p-10 {
+    padding: 2.5rem;
   }
 }
