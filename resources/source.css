@@ -11,7 +11,7 @@
 }
 
 .offsetBold {
-    @apply font-semibold pb-1
+    @apply font-bold pb-1
 }
 
 ::-webkit-scrollbar {
