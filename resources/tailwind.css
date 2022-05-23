@@ -532,6 +532,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
 }
 
+.grid-cols-\[repeat\(auto-fit\2c minmax\(05rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(05rem,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(5rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(5rem,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(20rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(auto\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(auto,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(autorem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(autorem,1fr));
+}
+
+.grid-cols-\[repeat\(auto-fit\2c minmax\(20\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(20,1fr));
+}
+
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
