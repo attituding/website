@@ -532,16 +532,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
 }
 
-.grid-rows-\[repeat\(auto-fit\2c minmax\(15rem\2c 1fr\)\)\] {
-  grid-template-rows: repeat(auto-fit,minmax(15rem,1fr));
-}
-
 .flex-row {
   flex-direction: row;
-}
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -566,10 +558,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-start {
   justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -660,16 +648,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-16 {
-  padding: 4rem;
 }
 
 .px-8 {
@@ -713,14 +701,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-semibold {
@@ -901,32 +889,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: fit-content;
   }
 
-  .main-desktop\:w-full {
-    width: 100%;
-  }
-
-  .main-desktop\:w-96 {
-    width: 24rem;
-  }
-
-  .main-desktop\:w-\[\] {
-    width: ;
-  }
-
-  .main-desktop\:w-\[36rem\] {
-    width: 36rem;
-  }
-
   .main-desktop\:w-\[50rem\] {
     width: 50rem;
-  }
-
-  .main-desktop\:w-\[45rem\] {
-    width: 45rem;
-  }
-
-  .main-desktop\:w-\[60rem\] {
-    width: 60rem;
   }
 
   .main-desktop\:max-w-3xl {
