@@ -524,16 +524,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
-.grid-flow-col-dense {
-  grid-auto-flow: column dense;
+.grid-cols-\[repeat\(auto-fit\2c minmax\(15rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
 }
 
 .grid-cols-\[repeat\(auto-fit\2c minmax\(20rem\2c 1fr\)\)\] {
   grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
 }
 
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+.grid-rows-\[repeat\(auto-fit\2c minmax\(15rem\2c 1fr\)\)\] {
+  grid-template-rows: repeat(auto-fit,minmax(15rem,1fr));
 }
 
 .flex-row-reverse {
@@ -664,6 +664,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -708,6 +712,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -888,8 +897,36 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: fit-content;
   }
 
-  .main-desktop\:grid-rows-1 {
-    grid-template-rows: repeat(1, minmax(0, 1fr));
+  .main-desktop\:w-full {
+    width: 100%;
+  }
+
+  .main-desktop\:w-96 {
+    width: 24rem;
+  }
+
+  .main-desktop\:w-\[\] {
+    width: ;
+  }
+
+  .main-desktop\:w-\[36rem\] {
+    width: 36rem;
+  }
+
+  .main-desktop\:w-\[50rem\] {
+    width: 50rem;
+  }
+
+  .main-desktop\:w-\[45rem\] {
+    width: 45rem;
+  }
+
+  .main-desktop\:w-\[60rem\] {
+    width: 60rem;
+  }
+
+  .main-desktop\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .main-desktop\:flex-row {
