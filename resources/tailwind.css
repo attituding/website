@@ -613,8 +613,8 @@ video {
   height: 100%;
 }
 
-.h-16 {
-  height: 4rem;
+.h-14 {
+  height: 3.5rem;
 }
 
 .w-full {
@@ -639,12 +639,12 @@ video {
   width: 2rem;
 }
 
-.w-16 {
-  width: 4rem;
+.w-14 {
+  width: 3.5rem;
 }
 
-.w-\[4rem\] {
-  width: 4rem;
+.w-12 {
+  width: 3rem;
 }
 
 .grid-cols-\[repeat\(auto-fit\2c minmax\(8rem\2c 1fr\)\)\] {
@@ -655,8 +655,8 @@ video {
   grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
 }
 
-.grid-cols-\[repeat\(auto-fit\2c minmax\(22rem\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+.grid-cols-\[repeat\(auto-fit\2c minmax\(19rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
 }
 
 .flex-row {
