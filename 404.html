@@ -14,13 +14,19 @@
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://attituding.live/" />
         <meta property="og:title" content="404 - Attituding" />
-        <meta property="og:description" content="I make and work on stuff that I find interesting." />
+        <meta
+            property="og:description"
+            content="I make and work on stuff that I find interesting."
+        />
         <meta property="og:image" content="/assets/pfp.webp" />
 
         <!-- Twitter -->
         <meta property="twitter:url" content="https://attituding.live/" />
         <meta property="twitter:title" content="404 - Attituding" />
-        <meta property="twitter:description" content="I make and work on stuff that I find interesting." />
+        <meta
+            property="twitter:description"
+            content="I make and work on stuff that I find interesting."
+        />
         <meta property="twitter:image" content="/assets/pfp.webp" />
 
         <script src="dist/index.js" type="module"></script>
@@ -33,9 +39,9 @@
             <!-- Always-Present Bar -->
             <div class="flex h-fit w-full justify-between gap-2 p-4">
                 <!-- Branding -->
-                <a href="/" class="flex items-center gap-4">
+                <a href="/" class="flex items-center gap-2">
                     <img class="h-10 w-10 rounded" src="./assets/pfp.webp" />
-                    <span class="mb-1 truncate text-3xl font-bold">Attituding</span>
+                    <span class="mb-1 hidden text-3xl font-bold desktop:block">Attituding</span>
                 </a>
 
                 <!-- Hamburger Menu -->
@@ -62,7 +68,7 @@
                     <a
                         href="https://github.com/Attituding/"
                         target="_blank"
-                        class="flex h-[3rem] place-content-center items-center gap-1 rounded bg-neutral-300 transition-all hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+                        class="flex h-12 place-content-center items-center gap-1 rounded bg-neutral-300 transition-all hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-600"
                     >
                         <!-- Octicons/mark-github -->
                         <svg
@@ -82,7 +88,7 @@
                     <a
                         href="/projects/"
                         target="_self"
-                        class="flex h-[3rem] place-content-center items-center gap-1 rounded bg-neutral-300 transition-all hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+                        class="flex h-12 place-content-center items-center gap-1 rounded bg-neutral-300 transition-all hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-600"
                     >
                         <!-- Octicons/project -->
                         <svg
@@ -106,7 +112,7 @@
                     <a
                         href="https://www.youtube.com/channel/UCyI7JXj02uBCPprhTREtRsQ"
                         target="_blank"
-                        class="flex h-[3rem] place-content-center items-center gap-1 rounded bg-neutral-300 transition-all hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+                        class="flex h-12 place-content-center items-center gap-1 rounded bg-neutral-300 transition-all hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-600"
                     >
                         <!-- https://materialdesignicons.com/icon/youtube -->
                         <svg
@@ -125,7 +131,7 @@
                     <a
                         href="mailto:me@attituding.live"
                         target="_blank"
-                        class="flex h-[3rem] place-content-center items-center gap-1 rounded bg-neutral-300 transition-all hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+                        class="flex h-12 place-content-center items-center gap-1 rounded bg-neutral-300 transition-all hover:bg-neutral-400 dark:bg-neutral-700 dark:hover:bg-neutral-600"
                     >
                         <!-- Octicons/mail -->
                         <svg
@@ -147,34 +153,32 @@
         </div>
 
         <!-- Body -->
-        <div class="flex flex-col items-center justify-center gap-4 p-8">
+        <div class="flex flex-col items-center justify-center gap-6 p-8">
             <span class="text-6xl font-semibold">404</span>
             <span class="text-center text-2xl font-semibold">
                 Looks like you took a wrong turn.
             </span>
-            <div class="flex w-fit justify-evenly gap-8 px-8">
-                <a
-                    href="/"
-                    target="_self"
-                    class="flex h-[4rem] w-[12rem] place-content-center items-center rounded-lg bg-zinc-200 transition-all hover:bg-zinc-100 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+            <a
+                href="/"
+                target="_self"
+                class="flex h-16 max-w-[20rem] place-content-center items-center rounded bg-zinc-200 p-4 transition-all hover:bg-zinc-100 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+            >
+                <svg
+                    class="mr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
                 >
-                    <svg
-                        class="mr-1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                    >
-                        <g fill="currentColor">
-                            <path
-                                fill-rule="evenodd"
-                                d="M11.03 2.59a1.5 1.5 0 011.94 0l7.5 6.363a1.5 1.5 0 01.53 1.144V19.5a1.5 1.5 0 01-1.5 1.5h-5.75a.75.75 0 01-.75-.75V14h-2v6.25a.75.75 0 01-.75.75H4.5A1.5 1.5 0 013 19.5v-9.403c0-.44.194-.859.53-1.144l7.5-6.363zM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v6.25h5v-9.403L12 3.734z"
-                            ></path>
-                        </g>
-                    </svg>
-                    <span class="text-xl font-semibold">Home</span>
-                </a>
-            </div>
+                    <g fill="currentColor">
+                        <path
+                            fill-rule="evenodd"
+                            d="M11.03 2.59a1.5 1.5 0 011.94 0l7.5 6.363a1.5 1.5 0 01.53 1.144V19.5a1.5 1.5 0 01-1.5 1.5h-5.75a.75.75 0 01-.75-.75V14h-2v6.25a.75.75 0 01-.75.75H4.5A1.5 1.5 0 013 19.5v-9.403c0-.44.194-.859.53-1.144l7.5-6.363zM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v6.25h5v-9.403L12 3.734z"
+                        ></path>
+                    </g>
+                </svg>
+                <span class="text-xl font-semibold">Home</span>
+            </a>
         </div>
 
         <!-- Footer -->
@@ -182,9 +186,10 @@
             class="flex h-fit w-full items-center justify-start gap-2 bg-neutral-200 p-4 dark:bg-neutral-800"
         >
             <img class="h-8 w-8 rounded" src="./assets/pfp.webp" />
-            <span class="mb-1 truncate font-semibold text-neutral-600 dark:text-neutral-400">
-                Copyright &#169; 2022
-                <a class="text-black dark:text-white" href="https://attituding.live">Attituding</a>
+            <span class="mb-1 font-semibold text-neutral-600 dark:text-neutral-400">
+                &#169; 2022
+                <a class="text-black dark:text-white" href="https://attituding.live">Attituding</a>.
+                All rights reserved.
             </span>
         </div>
     </body>
