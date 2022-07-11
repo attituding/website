@@ -645,12 +645,12 @@ video {
   grid-template-columns: repeat(auto-fit,minmax(8rem,1fr));
 }
 
-.grid-cols-\[repeat\(auto-fit\2c minmax\(19rem\2c 1fr\)\)\] {
-  grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+.grid-cols-\[repeat\(auto-fit\2c minmax\(10rem\2c 1fr\)\)\] {
+  grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
 }
 
-.flex-row {
-  flex-direction: row;
+.grid-cols-\[repeat\(auto-fit\2c 3\.5rem\)\] {
+  grid-template-columns: repeat(auto-fit,3.5rem);
 }
 
 .flex-col {
@@ -711,12 +711,6 @@ video {
 
 .self-center {
   align-self: center;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .rounded {
@@ -965,7 +959,13 @@ video {
 }
 
 @media (min-width: 280px) {
-  .desktop\:block {
+  .show-name\:block {
     display: block;
+  }
+}
+
+@media (min-width: 350px) {
+  .projects-desktop\:grid-cols-\[repeat\(auto-fit\2c minmax\(19rem\2c 1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
   }
 }

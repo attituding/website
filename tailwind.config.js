@@ -4,7 +4,8 @@ module.exports = {
         extend: {},
         screens: {
             'main-desktop': '750px',
-            desktop: '280px',
+            'show-name': '280px',
+            'projects-desktop': '350px',
         },
     },
     plugins: [],
