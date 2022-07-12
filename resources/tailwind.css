@@ -965,7 +965,7 @@ video {
 }
 
 @media (min-width: 350px) {
-  .projects-desktop\:grid-cols-\[repeat\(auto-fit\2c minmax\(19rem\2c 1fr\)\)\] {
-    grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
+  .projects-desktop\:grid-cols-\[repeat\(auto-fit\2c minmax\(20rem\2c 1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
   }
 }
