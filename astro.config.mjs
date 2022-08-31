@@ -16,5 +16,5 @@ export default defineConfig({
             },
         }),
     ],
-    site: 'https://shortsdeflector.attituding.live',
+    site: 'https://attituding.live',
 });
