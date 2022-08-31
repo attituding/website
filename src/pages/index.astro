@@ -1,149 +1,27 @@
 ---
-import '../styles/base.css';
-
-// This page is temp
+import AutoGrid from '../components/AutoGrid.astro';
+import Button from '../components/Button.astro';
+import Title from '../components/Title.astro';
+import LayoutBasic from '../layouts/LayoutBasic.astro';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Attituding</title>
-
-        <meta name="title" content="Attituding" />
-        <meta
-            name="description"
-            content="Making and working on things that are sometimes interesting."
-        />
-        <meta name="theme-color" content="#404040" />
-
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://attituding.live/" />
-        <meta property="og:title" content="Attituding" />
-        <meta
-            property="og:description"
-            content="Making and working on things that are sometimes interesting."
-        />
-        <meta property="og:image" content="/pfp.webp" />
-
-        <!-- Twitter -->
-        <meta property="twitter:url" content="https://attituding.live/" />
-        <meta property="twitter:title" content="Attituding" />
-        <meta
-            property="twitter:description"
-            content="Making and working on things that are sometimes interesting."
-        />
-        <meta property="twitter:image" content="/pfp.webp" />
-
-        <link rel="shortcut icon" type="image/x-icon" href="/pfp.webp" />
-    </head>
-    <body
-        class="flex h-full w-full items-start justify-center gap-8 bg-white p-4 font-sans text-black dark:bg-neutral-900 dark:text-white main-desktop:h-screen main-desktop:items-center main-desktop:p-16"
-    >
+<LayoutBasic>
+    <div class="flex flex-col gap-4 max-w-3xl w-full p-4">
         <div
-            class="h-full w-full border-neutral-300 dark:border-neutral-700 main-desktop:h-fit main-desktop:w-[50rem] main-desktop:max-w-3xl main-desktop:rounded-lg main-desktop:border-4 main-desktop:bg-neutral-100 main-desktop:dark:bg-neutral-800"
+            class="flex h-fit w-full dark:bg-dark-2 bg-light-2 rounded-3xl p-8 justify-center items-center gap-4"
         >
-            <div
-                class="flex h-full w-full flex-col items-center justify-start gap-8 p-8 main-desktop:h-fit"
-            >
-                <div class="flex flex-col items-center gap-4 align-middle main-desktop:flex-row">
-                    <img class="w-15 h-15 rounded" src="/pfp.webp" />
-                    <span class="text-5xl font-bold">Attituding</span>
-                </div>
-                <span class="pb-1 text-center text-2xl font-semibold">
-                    Making and working on things that are sometimes interesting.
-                </span>
-                <div
-                    class="grid w-full grid-cols-[repeat(auto-fit,minmax(8rem,1fr))] items-center justify-center gap-4"
-                >
-                    <a
-                        href="https://github.com/Attituding/"
-                        target="_blank"
-                        class="flex h-12 place-content-center items-center gap-1 rounded bg-neutral-200 transition-all hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600"
-                    >
-                        <!-- Octicons/mark-github -->
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 16 16"
-                            width="24"
-                            height="24"
-                        >
-                            <path
-                                fill="currentColor"
-                                fill-rule="evenodd"
-                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-                            />
-                        </svg>
-                        <span class="text-lg font-bold">GitHub</span>
-                    </a>
-                    <a
-                        href="/projects/"
-                        target="_self"
-                        class="flex h-12 place-content-center items-center gap-1 rounded bg-neutral-200 transition-all hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600"
-                    >
-                        <!-- Octicons/project -->
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="24"
-                            height="24"
-                        >
-                            <path
-                                fill="currentColor"
-                                d="M7.25 6a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5A.75.75 0 007.25 6zM12 6a.75.75 0 00-.75.75v4.5a.75.75 0 001.5 0v-4.5A.75.75 0 0012 6zm4 .75a.75.75 0 011.5 0v9.5a.75.75 0 01-1.5 0v-9.5z"
-                            />
-                            <path
-                                fill="currentColor"
-                                fill-rule="evenodd"
-                                d="M3.75 2A1.75 1.75 0 002 3.75v16.5c0 .966.784 1.75 1.75 1.75h16.5A1.75 1.75 0 0022 20.25V3.75A1.75 1.75 0 0020.25 2H3.75zM3.5 3.75a.25.25 0 01.25-.25h16.5a.25.25 0 01.25.25v16.5a.25.25 0 01-.25.25H3.75a.25.25 0 01-.25-.25V3.75z"
-                            />
-                        </svg>
-                        <span class="text-lg font-bold">Projects</span>
-                    </a>
-                    <a
-                        href="https://www.youtube.com/channel/UCyI7JXj02uBCPprhTREtRsQ"
-                        target="_blank"
-                        class="flex h-12 place-content-center items-center gap-1 rounded bg-neutral-200 transition-all hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600"
-                    >
-                        <!-- https://materialdesignicons.com/icon/youtube -->
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="24"
-                            height="24"
-                        >
-                            <path
-                                fill="currentColor"
-                                d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z"
-                            />
-                        </svg>
-                        <span class="text-lg font-bold">YouTube</span>
-                    </a>
-                    <a
-                        href="mailto:me@attituding.live"
-                        target="_blank"
-                        class="flex h-12 place-content-center items-center gap-1 rounded bg-neutral-200 transition-all hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600"
-                    >
-                        <!-- Octicons/mail -->
-                        <svg
-                            fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width="24"
-                            height="24"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M1.75 3A1.75 1.75 0 000 4.75v14c0 .966.784 1.75 1.75 1.75h20.5A1.75 1.75 0 0024 18.75v-14A1.75 1.75 0 0022.25 3H1.75zM1.5 4.75a.25.25 0 01.25-.25h20.5a.25.25 0 01.25.25v.852l-10.36 7a.25.25 0 01-.28 0l-10.36-7V4.75zm0 2.662V18.75c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V7.412l-9.52 6.433c-.592.4-1.368.4-1.96 0L1.5 7.412z"
-                            />
-                        </svg>
-                        <span class="text-lg font-bold">Contact</span>
-                    </a>
-                </div>
-            </div>
+            <img class="h-16 w-16 rounded-full" src="/pfp.webp" />
+            <Title heading="1">Attituding</Title>
         </div>
-    </body>
-</html>
+        <AutoGrid
+            desktopGrid="projects-desktop:grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
+            gap="gap-4"
+            mobileGrid="grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
+        >
+            <Button href="/projects" icon="/project.svg" iconAlt="Vector of an icon representing projects" target="_self" title="Projects" />
+            <Button href="https://github.com/Attituding" icon="/mark-github.svg" iconAlt="GitHub logo" title="GitHub" />
+            <Button href="https://www.youtube.com/channel/UCyI7JXj02uBCPprhTREtRsQ" icon="/youtube.svg" iconAlt="YouTube logo" title="YouTube" />
+            <Button href="mailto:attituding@outlook.com" icon="/mail.svg" iconAlt="Vector of an icon representing mail" title="Contact" />
+        </AutoGrid>
+    </div>
+</LayoutBasic>

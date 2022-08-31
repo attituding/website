@@ -4,10 +4,10 @@ import Block from '../components/Block.astro';
 import Project from '../components/Project.astro';
 import Text from '../components/Text.astro';
 import Title from '../components/Title.astro';
-import Base from '../layouts/Base.astro';
+import LayoutNormal from '../layouts/LayoutNormal.astro';
 ---
 
-<Base>
+<LayoutNormal>
     <Block>
         <Title anchor="projects" heading="1">Projects</Title>
         <Text>Check out the random stuff I have made</Text>
@@ -16,13 +16,14 @@ import Base from '../layouts/Base.astro';
         <Title anchor="cool-projects" heading="2">Cool Projects</Title>
         <AutoGrid
             desktopGrid="projects-desktop:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]"
+            gap="gap-8"
             mobileGrid="grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
         >
             <Project
                 description="Hypixel News is a work-in-progress bot that sends you the latest news from the Hypixel Network. This project is not affiliated nor associated with Hypixel Inc."
                 github="https://github.com/Attituding/shorts-deflector"
                 home="https://github.com/Attituding/hypixel-news"
-                icon="/hypixel-news-icon.svg"
+                icon="/hypixel-news.svg"
                 iconAlt="Hypixel News icon"
                 name="Hypixel News"
             />
@@ -32,7 +33,7 @@ import Base from '../layouts/Base.astro';
                 firefox="https://addons.mozilla.org/en-CA/firefox/addon/iris"
                 github="https://github.com/Attituding/iris"
                 home="https://hypixel.net/threads/browser-extension-iris-a-unique-take-on-a-session-checker.4572237/"
-                icon="/iris-icon.svg"
+                icon="/iris.svg"
                 iconAlt="Iris icon"
                 name="Iris"
             />
@@ -40,7 +41,7 @@ import Base from '../layouts/Base.astro';
                 description="NotifHy is notification bot for Hypixel. Share logins with friends, get reminders to claim daily rewards, and get alerts on suspicious activity."
                 github="https://github.com/Attituding/notifhy"
                 home="https://notifhy.attituding.live/"
-                icon="/notifhy-icon.svg"
+                icon="/notifhy.svg"
                 iconAlt="NotifHy icon"
                 name="NotifHy"
             />
@@ -50,7 +51,7 @@ import Base from '../layouts/Base.astro';
                 firefox="https://addons.mozilla.org/en-CA/firefox/addon/shorts-deflector"
                 github="https://github.com/Attituding/shorts-deflector"
                 home="https://shortsdeflector.attituding.live/"
-                icon="/shorts-deflector-icon.svg"
+                icon="/shorts-deflector.svg"
                 iconAlt="Shorts Deflector icon"
                 name="Shorts Deflector"
             />
@@ -60,6 +61,7 @@ import Base from '../layouts/Base.astro';
         <Title anchor="developer-projects" heading="2">Developer Projects</Title>
         <AutoGrid
             desktopGrid="projects-desktop:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]"
+            gap="gap-8"
             mobileGrid="grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
         >
             <Project
@@ -78,6 +80,7 @@ import Base from '../layouts/Base.astro';
         <Title anchor="deprecated-projects" heading="2">Deprecated Projects</Title>
         <AutoGrid
             desktopGrid="projects-desktop:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]"
+            gap="gap-8"
             mobileGrid="grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
         >
             <Project
@@ -92,4 +95,4 @@ import Base from '../layouts/Base.astro';
             />
         </AutoGrid>
     </Block>
-</Base>
+</LayoutNormal>

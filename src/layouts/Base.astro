@@ -1,20 +1,13 @@
 ---
 import '../styles/base.css';
-import Link from '../components/Link.astro';
-import Content from './Content.astro';
-import Footer from './Footer.astro';
-import Header from './Header.astro';
 
 export interface Props {
-    title?: string;
+    description: string,
+    icon: string,
+    titleMeta: string;
 }
 
-const { title } = Astro.props as Props;
-
-const description = 'Making and working on things that are sometimes interesting';
-const icon = '/pfp.webp';
-const site = 'Attituding';
-const titleMeta = title ? `${title} - ${site}` : site;
+const { description, icon, titleMeta } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -48,6 +41,15 @@ const titleMeta = title ? `${title} - ${site}` : site;
         />
         <meta property="twitter:image" content={icon} />
     </head>
+    <body class="dark:bg-dark-1 bg-light-1 font-sans text-light-1 dark:text-dark-1">
+        <slot />
+    </body>
+</html>
+
+
+<!-- 
+
+
     <body class="flex flex-col dark:bg-dark-1 bg-light-1 font-sans text-light-1 dark:text-dark-1">
         <Header icon="/pfp.webp" site={site}>
             <Link href="/projects" label="Projects" target="_self" />
@@ -59,34 +61,34 @@ const titleMeta = title ? `${title} - ${site}` : site;
             <slot />
         </Content>
         <Footer author="Attituding" authorHref="https://attituding.live" icon='/pfp.webp' />
-        <script>
-            // Anchor stuff
-            const anchors = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
-            const header = document.getElementById('header') as HTMLDivElement;
-
-            const scrollToAnchor = (anchor: HTMLAnchorElement) => {
-                const top =
-                    anchor.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight;
-
-                window.scrollTo({
-                    top: top,
-                    behavior: 'smooth',
-                });
-            };
-
-            anchors.forEach((anchor) => {
-                anchor.addEventListener('click', () => {
-                    scrollToAnchor(anchor);
-                });
-            });
-
-            const selectedAnchor = Object.values(anchors).find(
-                (anchor) => anchor.href === document.URL,
-            );
-
-            if (selectedAnchor) {
-                scrollToAnchor(selectedAnchor);
-            }
-        </script>
     </body>
-</html>
+    <script>
+        // Anchor stuff
+        const anchors = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
+        const header = document.getElementById('header') as HTMLDivElement;
+
+        const scrollToAnchor = (anchor: HTMLAnchorElement) => {
+            const top =
+                anchor.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight;
+
+            window.scrollTo({
+                top: top,
+                behavior: 'smooth',
+            });
+        };
+
+        anchors.forEach((anchor) => {
+            anchor.addEventListener('click', () => {
+                scrollToAnchor(anchor);
+            });
+        });
+
+        const selectedAnchor = Object.values(anchors).find(
+            (anchor) => anchor.href === document.URL,
+        );
+
+        if (selectedAnchor) {
+            scrollToAnchor(selectedAnchor);
+        }
+    </script>
+ -->
