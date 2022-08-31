@@ -1,0 +1,91 @@
+---
+import AutoGrid from '../components/AutoGrid.astro';
+import Block from '../components/Block.astro';
+import Project from '../components/Project.astro';
+import Text from '../components/Text.astro';
+import Title from '../components/Title.astro';
+import Base from '../layouts/Base.astro';
+---
+
+<Base>
+    <Block>
+        <Title anchor="projects" heading="1">Projects</Title>
+        <Text>Check out the random stuff I have made</Text>
+    </Block>
+    <Block>
+        <Title anchor="cool-projects" heading="2">Cool Projects</Title>
+        <AutoGrid
+            desktopGrid="projects-desktop:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]"
+            mobileGrid="grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
+        >
+            <Project
+                description="Hypixel News is a work-in-progress bot that sends you the latest news from the Hypixel Network. This project is not affiliated nor associated with Hypixel Inc."
+                name="Hypixel News"
+                github="https://github.com/Attituding/shorts-deflector"
+                home="https://github.com/Attituding/hypixel-news"
+                icon="/hypixel-news-icon.svg"
+            />
+            <Project
+                chrome="https://chrome.google.com/webstore/detail/iris/eoimknngdbibmlhfkkfdjiaonaelahgo"
+                description="Iris is a browser extension for Hypixel made to check any Hypixel player's last session easily and quickly. Compatible with Chromium based browsers and Firefox."
+                firefox="https://addons.mozilla.org/en-CA/firefox/addon/iris"
+                name="Iris"
+                github="https://github.com/Attituding/iris"
+                home="https://hypixel.net/threads/browser-extension-iris-a-unique-take-on-a-session-checker.4572237/"
+                icon="/iris-icon.svg"
+            />
+            <Project
+                description="NotifHy is notification bot for Hypixel. Share logins with friends, get reminders to claim daily rewards, and get alerts on suspicious activity."
+                name="NotifHy"
+                github="https://github.com/Attituding/notifhy"
+                home="https://notifhy.attituding.live/"
+                icon="/notifhy-icon.svg"
+            />
+            <Project
+                chrome="https://chrome.google.com/webstore/detail/shorts-deflector/gilmponliddppjjcfjmanmmfgiilikhg"
+                description="Shorts Deflector is a Chromium and Firefox browser extension that redirects YouTube Shorts to the normal desktop interface."
+                firefox="https://addons.mozilla.org/en-CA/firefox/addon/shorts-deflector"
+                name="Shorts Deflector"
+                github="https://github.com/Attituding/shorts-deflector"
+                home="https://shortsdeflector.attituding.live/"
+                icon="/shorts-deflector-icon.svg"
+            />
+        </AutoGrid>
+    </Block>
+    <Block>
+        <Title anchor="developer-projects" heading="2">Developer Projects</Title>
+        <AutoGrid
+            desktopGrid="projects-desktop:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]"
+            mobileGrid="grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
+        >
+            <Project
+                description="PostgreSQL Backup is a utility for backing up small-ish PostgreSQL servers to a Google Drive account. "
+                name="PostgreSQL Backup"
+                github="https://github.com/Attituding/postgresql-backup"
+            />
+            <Project
+                description="A serverless Discord Bot designed for Cloudflare Workers. "
+                name="Serverless Discord Bot"
+                github="https://github.com/Attituding/serverless-discord-bot"
+            />
+        </AutoGrid>
+    </Block>
+    <Block>
+        <Title anchor="deprecated-projects" heading="2">Deprecated Projects</Title>
+        <AutoGrid
+            desktopGrid="projects-desktop:grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]"
+            mobileGrid="grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
+        >
+            <Project
+                description="An application built around the discord-rpc library to provide custom status message(s) for any desktop Discord user."
+                name="Discord Rich Presence"
+                github="https://github.com/Attituding/discord-rich-presence"
+            />
+            <Project
+                description="The HyGuard project was created to be a warning system to alert users to prevent other nefarious individuals from hijacking your Minecraft account."
+                name="HyGuard"
+                github="https://github.com/Attituding/hyguard"
+            />
+        </AutoGrid>
+    </Block>
+</Base>

@@ -1,0 +1,13 @@
+---
+export interface Props {
+    desktopGrid: string;
+    mobileGrid: string;
+
+}
+
+const { desktopGrid, mobileGrid } = Astro.props as Props;
+---
+
+<div class={`grid w-full ${mobileGrid} items-stretch justify-items-stretch gap-8 ${desktopGrid}`}>
+    <slot />
+</div>
