@@ -2,8 +2,8 @@
 export interface Props {
     description?: string;
     href: string;
-    icon?: string,
-    iconAlt?: string,
+    icon?: string;
+    iconAlt?: string;
     maxWidth?: string;
     target?: '_blank' | '_parent' | '_self' | '_top';
     title: string;
@@ -22,7 +22,8 @@ const { description, href, icon, iconAlt, maxWidth, title, target } = Astro.prop
     <div class="flex justify-between items-center">
         <span class="sm:text-xl text-lg font-semibold flex-wrap">{title}</span>
         <img
-            alt={iconAlt ?? 'Icon that describes that the surrounding container is a a clickable anchor'}
+            alt={iconAlt ??
+                'Icon that describes that the surrounding container is a a clickable anchor'}
             class="h-6 w-6"
             src={icon ?? '/link-external.svg'}
         />

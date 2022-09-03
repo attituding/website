@@ -17,7 +17,9 @@ const titleMeta = title ? `${title} - ${site}` : site;
 ---
 
 <Base description={description} icon={icon} titleMeta={titleMeta}>
-    <script>import '../scripts/anchors.js';</script>
+    <script>
+        import '../scripts/anchors.js';
+    </script>
     <Header icon={icon} site={site}>
         <Link href="/projects" label="Projects" target="_self" />
         <Link href="https://github.com/Attituding" label="GitHub" />

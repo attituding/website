@@ -2,8 +2,8 @@
 import '../styles/base.css';
 
 export interface Props {
-    description: string,
-    icon: string,
+    description: string;
+    icon: string;
     titleMeta: string;
 }
 
@@ -14,7 +14,7 @@ const { description, icon, titleMeta } = Astro.props as Props;
 <html lang="en">
     <head>
         <link href={icon} rel="shortcut icon" type="image/x-icon" />
-        
+
         <!-- General Meta Tags -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,22 +23,16 @@ const { description, icon, titleMeta } = Astro.props as Props;
         <title>{titleMeta}</title>
         <meta content={description} name="description" />
         <meta content="#f40407" name="theme-color" />
-    
+
         <!-- Open Graph -->
         <meta property="og:type" content="website" />
         <meta property="og:title" content={titleMeta} />
-        <meta
-            property="og:description"
-            content={description}
-        />
+        <meta property="og:description" content={description} />
         <meta property="og:image" content={icon} />
-    
+
         <!-- Twitter -->
         <meta property="twitter:title" content={titleMeta} />
-        <meta
-            content={description}
-            property="twitter:description"
-        />
+        <meta content={description} property="twitter:description" />
         <meta property="twitter:image" content={icon} />
     </head>
     <body class="dark:bg-dark-1 bg-light-1 font-sans text-light-1 dark:text-dark-1">

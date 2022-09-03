@@ -1,12 +1,16 @@
 ---
 export interface Props {
+    desktopGap: string;
     desktopGrid: string;
+    mobileGap: string;
     mobileGrid: string;
 }
 
-const { desktopGrid, mobileGrid } = Astro.props as Props;
+const { desktopGap, desktopGrid, mobileGap, mobileGrid } = Astro.props as Props;
 ---
 
-<div class={`grid w-full ${mobileGrid} items-stretch justify-items-stretch sm:gap-8 gap-4 ${desktopGrid}`}>
+<div
+    class={`grid w-full ${mobileGrid} items-stretch justify-items-stretch ${desktopGap} ${mobileGap} ${desktopGrid}`}
+>
     <slot />
 </div>
