@@ -17,6 +17,7 @@ const titleMeta = title ? `${title} - ${site}` : site;
 ---
 
 <Base description={description} icon={icon} titleMeta={titleMeta}>
+    <script>import '../scripts/anchors.js';</script>
     <Header icon={icon} site={site}>
         <Link href="/projects" label="Projects" target="_self" />
         <Link href="https://github.com/Attituding" label="GitHub" />
@@ -29,34 +30,4 @@ const titleMeta = title ? `${title} - ${site}` : site;
         </main>
     </div>
     <Footer author="Attituding" authorHref="https://attituding.live" icon={icon} />
-
-    <script>
-        // Anchor stuff
-        const anchors = document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]');
-        const header = document.getElementById('header') as HTMLDivElement;
-
-        const scrollToAnchor = (anchor: HTMLAnchorElement) => {
-            const top =
-                anchor.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight;
-
-            window.scrollTo({
-                top: top,
-                behavior: 'smooth',
-            });
-        };
-
-        anchors.forEach((anchor) => {
-            anchor.addEventListener('click', () => {
-                scrollToAnchor(anchor);
-            });
-        });
-
-        const selectedAnchor = Object.values(anchors).find(
-            (anchor) => anchor.href === document.URL,
-        );
-
-        if (selectedAnchor) {
-            scrollToAnchor(selectedAnchor);
-        }
-    </script>
 </Base>
