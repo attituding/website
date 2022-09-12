@@ -11,7 +11,7 @@ const HeadingTag: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' = `h${heading}`;
 
 const cleanHash = title
     .toLowerCase()
-    .replace(' ', '-')
+    .replaceAll(' ', '-')
     .replace(/[^a-zA-Z0-9?/:@\-._~!$&'()*+,;=]/gm, '');
 ---
 
