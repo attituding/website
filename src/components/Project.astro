@@ -17,7 +17,15 @@ const { chrome, description, firefox, github, home, icon, iconAlt, name } = Astr
     <div class="flex flex-col gap-4">
         <div class="flex flex-col justify-between gap-4">
             <div class="flex items-center gap-4 align-middle">
-                {icon && <img alt={iconAlt} class="h-14 w-14 select-none rounded-xl" src={icon} />}
+                {
+                    icon && (
+                        <img
+                            alt={iconAlt}
+                            class="h-14 w-14 select-none rounded-xl"
+                            src={icon}
+                        />
+                    )
+                }
                 <span class="h3">{name}</span>
             </div>
             <div class="grid grid-cols-[repeat(auto-fit,3.5rem)] gap-4">
@@ -26,9 +34,13 @@ const { chrome, description, firefox, github, home, icon, iconAlt, name } = Astr
                         <a
                             href={github}
                             target="_blank"
-                            class="bg-light-3 hover:bg-light-4 dark:bg-dark-3 dark:hover:bg-dark-4 group flex h-10 w-14 place-content-center items-center rounded-3xl hover:rounded-2xl transition-all"
+                            class="bg-light-3 hover:bg-light-4 dark:bg-dark-3 dark:hover:bg-dark-4 group flex h-10 w-14 place-content-center items-center rounded-3xl transition-all hover:rounded-2xl"
                         >
-                            <img alt="GitHub icon" class="select-none" src="/mark-github.svg" />
+                            <img
+                                alt="GitHub icon"
+                                class="select-none"
+                                src="/mark-github.svg"
+                            />
                         </a>
                     )
                 }
@@ -37,9 +49,13 @@ const { chrome, description, firefox, github, home, icon, iconAlt, name } = Astr
                         <a
                             href={home}
                             target="_blank"
-                            class="bg-light-3 hover:bg-light-4 dark:bg-dark-3 dark:hover:bg-dark-4 group flex h-10 w-14 place-content-center items-center rounded-3xl hover:rounded-2xl transition-all"
+                            class="bg-light-3 hover:bg-light-4 dark:bg-dark-3 dark:hover:bg-dark-4 group flex h-10 w-14 place-content-center items-center rounded-3xl transition-all hover:rounded-2xl"
                         >
-                            <img alt="Icon of a home" class="select-none" src="/home-fill.svg" />
+                            <img
+                                alt="Icon of a home"
+                                class="select-none"
+                                src="/home-fill.svg"
+                            />
                         </a>
                     )
                 }
@@ -48,9 +64,13 @@ const { chrome, description, firefox, github, home, icon, iconAlt, name } = Astr
                         <a
                             href={chrome}
                             target="_blank"
-                            class="bg-light-3 hover:bg-light-4 dark:bg-dark-3 dark:hover:bg-dark-4 group flex h-10 w-14 place-content-center items-center rounded-3xl hover:rounded-2xl transition-all"
+                            class="bg-light-3 hover:bg-light-4 dark:bg-dark-3 dark:hover:bg-dark-4 group flex h-10 w-14 place-content-center items-center rounded-3xl transition-all hover:rounded-2xl"
                         >
-                            <img alt="Chrome logo" class="select-none" src="/chrome.svg" />
+                            <img
+                                alt="Chrome logo"
+                                class="select-none"
+                                src="/chrome.svg"
+                            />
                         </a>
                     )
                 }
@@ -59,9 +79,13 @@ const { chrome, description, firefox, github, home, icon, iconAlt, name } = Astr
                         <a
                             href={firefox}
                             target="_blank"
-                            class="bg-light-3 hover:bg-light-4 dark:bg-dark-3 dark:hover:bg-dark-4 group flex h-10 w-14 place-content-center items-center rounded-3xl hover:rounded-2xl transition-all"
+                            class="bg-light-3 hover:bg-light-4 dark:bg-dark-3 dark:hover:bg-dark-4 group flex h-10 w-14 place-content-center items-center rounded-3xl transition-all hover:rounded-2xl"
                         >
-                            <img alt="Firefox logo" class="select-none" src="/firefox.svg" />
+                            <img
+                                alt="Firefox logo"
+                                class="select-none"
+                                src="/firefox.svg"
+                            />
                         </a>
                     )
                 }

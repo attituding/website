@@ -10,11 +10,14 @@ import LayoutBasic from '../layouts/LayoutBasic.astro';
         <div
             class="flex h-fit w-full dark:bg-dark-2 bg-light-2 rounded-3xl p-8 justify-center items-center gap-4"
         >
-            <img class="h-16 w-16 rounded-full" src="/pfp.webp" />
+            <img
+                class="h-16 w-16 rounded-full select-none"
+                src="/pfp.webp"
+            />
             <Title heading="1">Attituding</Title>
         </div>
         <AutoGrid
-        desktopGap="sm:gap-4"
+            desktopGap="sm:gap-4"
             desktopGrid="projects-desktop:grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"
             mobileGap="gap-2"
             mobileGrid="grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]"

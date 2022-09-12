@@ -16,20 +16,44 @@ const site = 'Attituding';
 const titleMeta = title ? `${title} - ${site}` : site;
 ---
 
-<Base description={description} icon={icon} titleMeta={titleMeta}>
+<Base
+    description={description}
+    icon={icon}
+    titleMeta={titleMeta}
+>
     <script>
         import '../scripts/anchors.js';
     </script>
-    <Header icon={icon} site={site}>
-        <Link href="/projects" label="Projects" target="_self" />
-        <Link href="https://github.com/Attituding" label="GitHub" />
-        <Link href="https://www.youtube.com/channel/UCyI7JXj02uBCPprhTREtRsQ" label="YouTube" />
-        <Link href="mailto:attituding@outlook.com" label="Contact" />
+    <Header
+        icon={icon}
+        site={site}
+    >
+        <Link
+            href="/projects"
+            label="Projects"
+            target="_self"
+        />
+        <Link
+            href="https://github.com/Attituding"
+            label="GitHub"
+        />
+        <Link
+            href="https://www.youtube.com/channel/UCyI7JXj02uBCPprhTREtRsQ"
+            label="YouTube"
+        />
+        <Link
+            href="mailto:attituding@outlook.com"
+            label="Contact"
+        />
     </Header>
     <div class="flex justify-center">
         <main class="flex flex-col max-w-[80rem] w-[80rem] sm:p-12 p-4 sm:gap-12 gap-8 h5">
             <slot />
         </main>
     </div>
-    <Footer author="Attituding" authorHref="https://attituding.live" icon={icon} />
+    <Footer
+        author="Attituding"
+        authorHref="https://attituding.live"
+        icon={icon}
+    />
 </Base>

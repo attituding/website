@@ -13,7 +13,11 @@ const site = 'Attituding';
 const titleMeta = title ? `${title} - ${site}` : site;
 ---
 
-<Base description={description} icon={icon} titleMeta={titleMeta}>
+<Base
+    description={description}
+    icon={icon}
+    titleMeta={titleMeta}
+>
     <main class="flex w-full h-screen justify-center sm:items-center items-start">
         <slot />
     </main>
