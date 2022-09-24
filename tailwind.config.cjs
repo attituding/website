@@ -35,11 +35,6 @@ module.exports = {
                 'light-2': '#404040',
                 'light-3': '#525252',
             },
-            screens: {
-                'main-desktop': '750px',
-                'show-name': '280px',
-                'projects-desktop': '350px',
-            },
         },
 	},
 	plugins: [],
