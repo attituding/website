@@ -16,5 +16,5 @@ export default defineConfig({
             },
         }),
     ],
-    site: 'https://attituding.live',
+    site: 'https://attituding.xyz',
 });
