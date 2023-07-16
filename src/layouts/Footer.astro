@@ -10,15 +10,20 @@ const { author, authorHref, icon } = Astro.props as Props;
 const year = new Date().getFullYear();
 ---
 
-<footer class="flex dark:bg-dark-2 bg-light-1 p-2 px-4 items-center gap-2">
-    <img
-        alt="Profile picture"
-        class="sm:h-6 sm:w-6 w-5 h-5 rounded-full select-none"
-        src={icon}
-    />
-    <span class="text-light-2 dark:text-dark-2 h6"
-        >&#169; {year} <a
-            class="text-light-1 dark:text-dark-1 font-bold"
+<footer class="flex items-center gap-2 bg-light-1 p-2 px-4 dark:bg-dark-2">
+    {
+        icon && (
+            <img
+                alt="Profile picture"
+                class="h-5 w-5 select-none rounded-full sm:h-6 sm:w-6"
+                src={icon}
+            />
+        )
+    }
+    <span class="h6 text-light-2 dark:text-dark-2"
+        >&#169; {year}
+        <a
+            class="font-bold text-light-1 dark:text-dark-1"
             href={authorHref}
             target="_blank"
             >{author}</a
